@@ -1,0 +1,22 @@
+<%-include('../includes/header.ejs')%>
+<title>
+    <%=title%>
+</title>
+</head>
+<body>
+    <%-include('../includes/navbar.ejs')%>
+    <main>
+        <h1 class="text-success mx-5 mt-4 mb-3">User Details</h1>
+        <div class="card mx-4 mt-3 mb-5" style="width: 18rem;">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/ks243gw0/poster/q/9/e/medium-movie-cap-pikachu-pokemon-matte-finish-poster-aoslskd216-original-imag5ptfxyqqftfn.jpeg?q=90&crop=false" class="card-img-top" alt="...">
+            <div class="card-body bg-warning">
+              <h5 class="card-title text-success fw-bold">Email Id: <span class="text-dark fw-normal"><%=info.email%></span></h5>
+              <p class="card-text text-success fs-5 fw-bold">Hash Password: <span class="text-dark fw-normal"><%=info.password%></span></p>
+              <div class="d-flex justify-content-center">
+                <a href="/logout" class="btn btn-danger btn-lg mt-2 mb-2">Log Out</a>
+              </div>
+            </div>
+          </div>
+    </main>
+<%-include('../includes/footer.ejs')%>
+    

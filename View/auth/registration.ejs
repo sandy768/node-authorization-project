@@ -1,0 +1,24 @@
+<%-include('../includes/header.ejs')%>
+<title>
+    <%=title%>
+</title>
+</head>
+<body>
+    <%-include('../includes/navbar.ejs')%>
+    <main>
+        <div>
+          <h2 class="text-center text-success mt-4 mb-4">Sign Up</h2>
+            <form action="/auth/postdata" class="mb-5" method="POST" autocomplete="off">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email Id">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </main>
+<%-include('../includes/footer.ejs')%>
